@@ -6,6 +6,9 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.text-description{
+  color: #727272;
+}
 header {
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 250px;
@@ -68,7 +71,7 @@ nav li a {
 
 main {
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .teams-container {
   display: flex;
@@ -103,10 +106,16 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav, .teams-container {
     flex-direction: column;
   }
   nav > ul {
+    margin-top: 20px;
+  }
+  .teams-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .teams-content{
     margin-top: 20px;
   }
 }
@@ -116,10 +125,13 @@ main {
   header {
     padding: 50px;
   }
-  nav {
+  nav, .teams-container {
     flex-direction: column;
   }
   nav > ul {
+    margin-top: 20px;
+  }
+  .teams-content{
     margin-top: 20px;
   }
 }
