@@ -106,10 +106,51 @@ main {
   font-weight: 700;
 }
 
-.facts{
-  padding: 120px 150px;
+.features {
+  display: flex;
+  margin-top: 120px;
+  height: 900px;
 }
-.facts .section-title{
+.features .card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+}
+.feature-content .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-img .badge {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #fff;
+  padding: 40px;
+  width: 230px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  left: 30px;
+}
+.feature-img img {
+  height: 80%;
+  margin-left: 100px;
+}
+.badge h2 {
+  font-size: 2.8rem;
+}
+.badge p {
+  font-size: 1.2rem;
+}
+.features .text-description {
+  margin-top: 10px;
+}
+
+.facts {
+  padding: 0px 150px;
+}
+.facts .section-title {
   margin-bottom: 20px;
 }
 .facts-card-container {
@@ -132,15 +173,19 @@ main {
   font-weight: 600;
   font-size: 1.25rem;
 }
+
 /*Responsiveness*/
 /*For mobile devices*/
 @media screen and (max-width: 576px) {
-  header, .facts {
+  header,
+  .facts,
+  .features {
     padding: 20px;
   }
   nav,
   .teams-container,
-  .facts-card-container {
+  .facts-card-container,
+  .features {
     flex-direction: column;
   }
   nav > ul {
@@ -152,22 +197,46 @@ main {
   .teams-content {
     margin-top: 20px;
   }
-  .facts-card-container{
+  .facts-card-container {
     gap: 10px;
     align-items: center;
   }
-  .facts-card-container .card{
-   width: 50%;
+  .facts-card-container .card {
+    width: 50%;
   }
+  .facts{
+    margin-top: 580px;
+  }
+  .features{
+    margin-top: 60px;
+  }
+  .feature-img img {
+    height: 42%;
+    margin: 20px;
+}
+.feature-img .badge{
+  width: 100px;
+  bottom: 100px;
+  left: 0px;
+  padding: 30px;
+}
+.badge h2 {
+  font-size: 1.8rem;
+}
+.badge p {
+  font-size: 1rem;
+}
 }
 
 /*For medium devices*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  header,.facts {
+  header,
+  .facts,
+  .features {
     padding: 50px;
   }
   nav,
-  .teams-container {
+  .teams-container,.features {
     flex-direction: column;
   }
   nav > ul {
@@ -176,8 +245,15 @@ main {
   .teams-content {
     margin-top: 20px;
   }
-  .facts-card-container{
+  .features{
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .facts-card-container {
     gap: 10px;
     align-items: center;
+  }
+  .facts{
+    margin-top: 640px;
   }
 }
