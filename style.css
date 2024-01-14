@@ -9,6 +9,7 @@
 
 .text-description {
   color: #727272;
+  margin-top: 10px;
 }
 
 .btn-primary {
@@ -67,7 +68,7 @@ nav li a {
 }
 
 .banner-description {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .banner img {
@@ -91,7 +92,7 @@ main {
   padding-left: 50px;
   padding-right: 20px;
 }
-.teams-content * {
+.teams-content button{
   margin-top: 20px;
 }
 .teams-title {
@@ -143,16 +144,16 @@ main {
 .badge p {
   font-size: 1.2rem;
 }
-.features .text-description {
+/* .features .text-description {
   margin-top: 10px;
-}
+} */
 
 .facts {
   padding: 0px 150px;
 }
-.facts .section-title {
+/* .facts .section-title {
   margin-bottom: 20px;
-}
+} */
 .facts-card-container {
   display: flex;
   justify-content: space-evenly;
@@ -174,6 +175,18 @@ main {
   font-size: 1.25rem;
 }
 
+.sponsors{
+  padding: 120px 150px;
+  text-align: center;
+}
+.sponsors-content{
+  padding: 0 100px;
+}
+.sponsors-image img{
+  height: 40px;
+  margin: 30px 20px;
+  filter: grayscale(100%);
+}
 /*Responsiveness*/
 /*For mobile devices*/
 @media screen and (max-width: 576px) {
