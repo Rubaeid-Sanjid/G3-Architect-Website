@@ -176,16 +176,27 @@ main {
 }
 
 .sponsors{
-  padding: 120px 150px;
+  margin-top: 120px;
   text-align: center;
 }
 .sponsors-content{
-  padding: 0 100px;
+  padding: 0 300px;
 }
 .sponsors-image img{
   height: 40px;
-  margin: 30px 20px;
+  margin: 40px 20px;
   filter: grayscale(100%);
+}
+
+footer{
+  padding: 0px 200px;
+  margin-bottom: 120px;
+}
+.copyright{
+  border-radius: 8px;
+background: #FFF4E7;
+text-align: center;
+padding: 20px 100px;
 }
 /*Responsiveness*/
 /*For mobile devices*/
