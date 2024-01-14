@@ -92,7 +92,7 @@ main {
   padding-left: 50px;
   padding-right: 20px;
 }
-.teams-content button{
+.teams-content button {
   margin-top: 20px;
 }
 .teams-title {
@@ -108,15 +108,18 @@ main {
 }
 
 .features {
-  display: flex;
+  padding: 0 150px;
   margin-top: 120px;
+}
+.feature-container {
+  display: flex;
   height: 900px;
 }
-.features .card {
+.feature-container .card {
   border-radius: 8px;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
   background: #fff;
 }
 .feature-content .section-title {
@@ -127,16 +130,17 @@ main {
   border-radius: 8px;
   background: #ff900e;
   color: #fff;
-  padding: 40px;
-  width: 230px;
+  padding: 50px;
+  width: 150px;
   text-align: center;
   position: relative;
   bottom: 100px;
-  left: 30px;
+  left: 10px;
 }
 .feature-img img {
-  height: 80%;
-  margin-left: 100px;
+  width: 500px;
+  height: 800px;
+  margin-left: 30px;
 }
 .badge h2 {
   font-size: 2.8rem;
@@ -144,16 +148,10 @@ main {
 .badge p {
   font-size: 1.2rem;
 }
-/* .features .text-description {
-  margin-top: 10px;
-} */
 
 .facts {
-  padding: 0px 150px;
+  padding: 80px 150px;
 }
-/* .facts .section-title {
-  margin-bottom: 20px;
-} */
 .facts-card-container {
   display: flex;
   justify-content: space-evenly;
@@ -175,28 +173,27 @@ main {
   font-size: 1.25rem;
 }
 
-.sponsors{
-  margin-top: 120px;
+.sponsors {
   text-align: center;
 }
-.sponsors-content{
+.sponsors-content {
   padding: 0 300px;
 }
-.sponsors-image img{
+.sponsors-image img {
   height: 40px;
   margin: 40px 20px;
   filter: grayscale(100%);
 }
 
-footer{
+footer {
   padding: 0px 200px;
   margin-bottom: 120px;
 }
-.copyright{
+.copyright {
   border-radius: 8px;
-background: #FFF4E7;
-text-align: center;
-padding: 20px 100px;
+  background: #fff4e7;
+  text-align: center;
+  padding: 20px 100px;
 }
 /*Responsiveness*/
 /*For mobile devices*/
@@ -204,23 +201,43 @@ padding: 20px 100px;
   header,
   .facts,
   .features,
+  .feature-container,
   .sponsors-content,
-  footer, .copyright {
+  footer,
+  .copyright {
     padding: 20px;
   }
   nav,
   .teams-container,
   .facts-card-container,
-  .features {
+  .feature-container {
     flex-direction: column;
   }
-  nav > ul, .teams-content {
+  nav > ul,
+  .teams-content {
     margin-top: 20px;
   }
   .teams-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
+  .features,
+  .sponsors {
+    margin-top: 50px;
+  }
+  .feature-img img {
+    width: 350px;
+    height: 500px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .feature-img .badge {
+    width: 100px;
+    bottom: 70px;
+    left: -20px;
+    padding: 30px;
+  }
+
   .facts-card-container {
     gap: 10px;
     align-items: center;
@@ -228,57 +245,59 @@ padding: 20px 100px;
   .facts-card-container .card {
     width: 50%;
   }
-  .facts{
-    margin-top: 580px;
+  .facts {
+    margin-top: 520px;
   }
-  .features, .sponsors{
-    margin-top: 50px;
+  
+  .badge h2 {
+    font-size: 1.8rem;
   }
-  .feature-img img {
-    height: 42%;
-    margin: 20px;
-}
-.feature-img .badge{
-  width: 100px;
-  bottom: 100px;
-  left: 0px;
-  padding: 30px;
-}
-.badge h2 {
-  font-size: 1.8rem;
-}
-.badge p {
-  font-size: 1rem;
-}
-footer{
-  margin-bottom: 40px;
-}
+  .badge p {
+    font-size: 1rem;
+  }
+  footer {
+    margin-bottom: 40px;
+  }
 }
 
 /*For medium devices*/
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1024px) {
   header,
-  .facts,
-  .features {
+  .facts {
     padding: 50px;
   }
   nav,
-  .teams-container,.features {
+  .teams-container,
+  .feature-container {
     flex-direction: column;
   }
-  nav > ul, .teams-content {
+  nav > ul,
+  .teams-content {
     margin-top: 20px;
   }
-   
-  .features{
-    margin: 50px;
+  .teams-content{
+    padding: 0 160px;
+  }
+
+  .feature-container {
+    align-items: center;
     gap: 20px;
+  }
+  .feature-img img {
+    width: 600px;
+    height: 600px;
+    margin-left: 0px;
+  }
+  .feature-img .badge {
+    padding: 40px;
+    bottom: 80px;
+    left: -30px;
   }
   .facts-card-container {
     gap: 10px;
     align-items: center;
   }
-  .facts{
-    margin-top: 680px;
+  .facts {
+    margin-top: 450px;
   }
 }
